@@ -1,0 +1,109 @@
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    margin: 100px auto 10px;
+}
+h1{
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    padding: 22px 0;
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+    text-align: left;
+}
+.cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.first_card,
+.second_card,
+.third_card{
+    max-width: 220px;
+    width: 100%;
+    height: 350px;
+    padding: 40px;
+}
+.first_card{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+.second_card{
+    background-color: hsl(184, 100%, 22%);
+}
+.third_card{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+button{
+    margin-top: 70px;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+button:hover{
+    border: 1px solid hsl(0, 0%, 95%);
+    background: none;
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn-1,
+.btn-2,
+.btn-3 {
+    background-color: hsl(0, 0%, 95%);
+}
+.btn-1{
+    color: hsl(31, 77%, 52%);
+}
+.btn-2{
+    color: hsl(184, 100%, 22%);
+}
+.btn-3{
+    color: hsl(179, 100%, 13%);
+}
+.attribution{
+    padding: 20px 0;
+    font-size: 1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: hsl(179, 100%, 13%);
+}
+
+/********************** Madia queries ****************************/
+@media(max-width: 839px){
+    .first_card,
+    .second_card,
+    .third_card{
+        border-radius: 0;
+    }
+}
+@media(max-width: 430px){
+    .first_card{
+        border-radius: 10px 10px 0 0;
+    }
+    .third_card{
+        border-radius: 0 0 10px 10px;
+    }
+}
