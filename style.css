@@ -6,8 +6,13 @@
     padding: 0;
 }
 body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    margin: 1rem 2rem;
     background-color: hsl(0, 0%, 95%);
-    margin: 100px auto 10px;
 }
 h1{
     font-family: 'Big Shoulders Display', sans-serif;
@@ -78,10 +83,17 @@ button:hover{
     color: hsl(179, 100%, 13%);
 }
 .attribution{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     padding: 20px 0;
     font-size: 1rem;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
+}
+.attribution > p {
+    color: #000;
 }
 a{
     text-decoration: none;
